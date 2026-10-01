@@ -1,0 +1,27 @@
+Cloud Economics
+
+Free Tier:- Certain services are always free, and some are free for 12 months after new account creation.
+	    EC2 750 hr,  S3 5gb, RDS 750hr  all are for 12 months in free account.
+	    DynamoDB 25gb, Lambda 1 millian, all for Always free
+	    SageMaker 2 months.
+	    
+On Demand:- On-demand is full pricing and pay-as-you-go, but no contact and very flexible.
+	    money = Size
+	    Pay As you go.
+
+Reservations:- Reservations are contracts that you enter with Amazon for 1-3 years.
+	       It is the commitment to amazon to use it for the particular time like 1 -3 years.
+	       You will have to pay if you use it or not.
+	       Amazon give you the discount for using this type.
+
+Volume Discount:- pay less per unit as you use more.
+		  So As your wtorage goes up Amazon gives you discount as you consume more.
+		  S3 1 cent for 1gb 
+		  The more you use the lower it costs per unit.
+
+Price Drop:-  Price drops are random price cuts that aws does every few years on its ervices.
+	      Amazon drop the price of new services. 
+	      since 2006 to 2013 aws drop prices of 129 times on varity of services.
+	      Price drop suspecially the new version of servies comes up they drop price of per unit.
+	      
+

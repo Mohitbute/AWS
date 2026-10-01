@@ -1,0 +1,8 @@
+Deployment Methods:- 
+
+Aws Colsole:- It is nothing more than web application. Log in via web browser. It has built in GUI that allow you to work with and manage all of you aws resources. 
+
+Aws CLI:- It is a command line tool that allows you to create and manage all of your aws resoures using the command line. 
+	  It is more easier to create multiple resources using cli. There are certain setting and knobs that are actually not configurable via console. The only way to change those setting is actually withing CLI. 
+
+Aws SDK (Software Developement Kit):- It allows you to pregrametically interact with aws. So you canuse your code to actually create and manage you Aws Resources. It support most of the populer languages. 

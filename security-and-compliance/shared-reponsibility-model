@@ -1,0 +1,33 @@
+Shared security module:-
+
+Old way:-
+Securing data center
+securing the networking
+securing the servers
+securing the OS 
+securing application deployed
+You own security end to end
+
+But If you are using aws seurity is the team effort between you and aws.
+So shared responsibility model is created. 
+aws:- physical infrastructure.
+      compute, storage, database, networking
+
+
+costumer:- responsible for outside of that.
+	   network, firewall, os, data encryption, server side encryption, networking traffic protection.
+
+
+IaaS:- Infrastructure as a service
+       EC2 elastic compute cloud.
+
+Paas:- Platform as a service.
+       AWS Elastic Benstock, AWS Lambda, Amazon Relational Database Service(RDS)
+
+SaaS:- Software as a service.
+       It owns everything excent as application data.
+       Amazon Workmail, Chime, Workdocs
+
+
+
+

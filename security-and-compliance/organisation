@@ -1,0 +1,11 @@
+Organisation:- 	It help you to do is manage multiple aws accounts. 
+
+Service control policies:- It restrice what account can do. applied to SA and individual unit.
+With aws organisation you can actually limit what an aws account can actually do using a feature called service control policies
+It is like Iam policies but at the account level.
+You can restrict what an account can actually do. So you can apply service control policies that allow the account to work with certain services and not with other services. 
+
+Organizational Unit:- Allow you to group accounts with similar business or security requirements.
+It is used when you have to manage the multiple aws accounts. It acts like an parant container for similarly configured aws accounts. You can apply a service control policy to the organizational unit and all the accounts whithin that organizational unit will then inharit the same service pollicy. 
+
+ 

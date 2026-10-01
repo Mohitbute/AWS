@@ -1,0 +1,9 @@
+1) Design for failure:- Resiliency and Auto Recovery. Be intentional about the failure and add redundancy.(Everything fails all the time)
+
+2) Decouple components:- Loosly coupled with Queue. put a queue or scaling layer in between components.(Watch for the coupling that is to tight)
+
+3) Implement elasticity:- Large expansion and contraction. Hardware boundries are larged.(Ability to acquire resources as you need them and released resources when you no longer need them. in cloud you want to do this autometically)
+
+4) Think parallel:- Run them in parallel.
+
+

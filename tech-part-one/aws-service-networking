@@ -1,0 +1,31 @@
+Core aws service networking:- 
+When you are using aws it gives you a your own mini private cloud. Every customer gets their own privet cloud. Each of these cloud are completly isolated from each other. Its acts as a virtual private Cloud (VPC). 
+
+Virtual Private Cloud (VPC) :- It is a secure, Isolated network segment hosted within aws. 
+	VPC isolates computing resources form other conputing resources available in the cloud. 
+	It gives the customers full control of networking in the cloud. Subnetting, Routing, Firewall, Gateways.
+	VPS is specific to a region. So VPC is going to encompass only resourcees that can be deployed to specific region that its assign to. 
+	It is a private network boundary. So things in one vpc cannot talk to other VPCs.
+	By default it they acts as network boundary. 
+Multiple VPCs:- Within you aws account you can have multiple VPCs. 
+
+VPCs and Regions:- 
+
+Subnet:- Within the VPCs you create Subnets. A Subnet is nothing more than a group of Ip addresses within you VPC. 
+	So You can see subnet has one ip range and other has another ip range. 
+	If you are going to deploy it onto a specific subnet its going to fall within that IP range. 
+	A subnet resides within a single Availability Zone. 
+	While craating a server in aws you have to define subnet you want it to be on.
+	Subnet can be made private and public to allow external access to resources within them.
+	Reserve ip addresses 192.168.10.0 network address, 192.168.10.1 - 192.168.10.3 reserve aws, 192.168.10.255 broadcast address You cannot use these reserve adresses. 
+
+VPC External Connectivity:- Subnets when first created are private and not exposed to the internet. You have to chage it to public subnet to give it access to the internet. 
+
+Internet gateway:- Used to make private subnet to public. So an internet gateway is assign to a VPC it allows subnet in the vpc to communicate with the internet and vice versa. It determine wheater the subnet i public or private. it dosent assign to the subnet it assign to the vpc. 
+
+Nat Gateway:- Used when a connection must be initiated from within the VPC. It gives internal resuorces access to the internet but they have to initiate the conection. So it the internet tries to send a request to you private subnet, its going to block it. It just accept the respose that intiated request from the subnet.  But to actually make use of nat gateway you still need Internet gateay you have to deploy nat on public gateway to access to the internet. Trafic flows from Subnet > Nat > Internet Gateway. 
+
+Virtual Private Gateway:- It gives secure access to Private resources or resources deployed onto Privet Subnet. It Is going to provide us a VPN connection over the internet for secure connection to our private subnets. 
+
+Direct Connect:- It is another way to connect aws and private resources is by using Direct Connect. You actually have to go to the DX location or direct connect location and you have to physically connect your route. This location has direct hign speed connectioni to aws regions. It going to allow you securely access your resources within aws through this Direct Connect Location. So insted od going over internet, you have a direct and secure hign speed link to that location. 
+

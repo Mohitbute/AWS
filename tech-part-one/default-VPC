@@ -1,0 +1,5 @@
+Default VPCs:- 
+
+Default:- Aws automatically creates default VPC in every single Region. It has default configuration by aws. One default VPC per region. Ip range 172.31.0.0/16. Within each default VPC you are going to have a default subnet for each availability zone in that region. It has internet gateway attached to it, it is automwtically going to have an internet gateway attached to the VPC to give it  internet connectivity. by default allyour subnet is going to be public subnet. Drfault security group and default network acccess control list. 
+
+Custom:- It allow you to create and modify all the configs associated with the VPC. You have to set up all the internet access, all diff subnets, and things like that. 

@@ -1,0 +1,28 @@
+AWS Lamda:- It is a compute service that lets you run code without having to provision or manage servers. 
+	    Lamda is aws serverless offering. Aws manages the server maintainance scalling capacity provisioning and logging. 
+	    Upload you code to lambda and aws has lambda service reserve service pool. 
+	    So whole bunch of instances that are just kind of sitting and waiting. If certain period is going to occur. Lambda pull a couple of instances from the reserve service pool. and run your code. After all done its going to send back the instances. 
+	    Its practially not the serverless, its just that Aws is managing all of the server under the hood. 
+
+Lambda use cases:- File Proccssing, Stream Processing, Web Application, Mobile/web Backend. 
+
+Benifits Of Lambda:- No servers to manage.
+		     No Need for an infra team. 
+		     No patching/upgrading
+		     Faster Development
+		     Auto Scale to handle traffic spikes.
+		     Pay for what you use. 
+		     Pay per invocation.
+		     No extra cost during low traffic.
+
+Downsides of Lambda:- No Local State.
+		      Will need a seperate database to store data that needs to persist.
+		      Limited execution duration. Function can run for most 15 mins. after that its timeout.
+		      Not good for long running tasks.
+		      It has cold start issues. Cold start occur due to the time it takes to initialize and load the function. 
+
+Lambda Pricing:- Number of times function ran.
+		 How long did it run for.
+		 How much memory/cpu did it require.
+
+

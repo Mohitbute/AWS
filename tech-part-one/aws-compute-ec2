@@ -1,0 +1,59 @@
+Amazon Elastic compute cloud (EC2):- 
+
+Service that provides secure, resizable compute capacity in the cloud.
+It allow you to provision a server on aws within minutes.
+Multiple EC2 instances can be deployed on a single server using virtual machines.
+VPCs are used to logically isolate each customers infrastructure. 
+
+Amazon Machine Image (AMI):- 
+AMI is an image that provides the information required to launch an EC2 instance.
+AMi is an blueprint that contains information such as what OS and what software/packages should be installed on an instance. 
+We can use this blueprint(ami) to deploy identical EC2 instances.
+There is different AMIs for diff OS for diff services and features.
+Think of the AMI as an installer disk used for installing a new server. 
+AMIs can be fully customised. add application source code, add dependency, OS , firewall etc.
+
+Instance Types:-
+EC2 provides wide selection of instances types optimised to fit different use cases.
+It has varying combinations of cpu, memory, storage, and networking capacity. 
+Think of instance types of server models to select from. 
+
+1) Gernal purpose:- Provide good balance of compute, memory, and networking resources.
+		 Can be used for diverse workloads. 
+		 Ideal for app that use resources in equal proportion.
+
+2) Compute Optimized:- Optimized for compute-heavy applications. 
+		  Contain high performance cpu. 
+		  Ideal for batch processing workloands, media transcoding, machine learning, and gaming servers.
+
+3) Memory Optimized:- Deliver fast performance for memory intensive workloads. suited for database.
+
+4) storage Optimized:- Optimized for workloads that require high sequential read and write access to large data sets on local storage.  
+Can deliver tens of thousands of low-letency random operations per sec(IOPS).
+
+5) Accelerated Computing:- Utilized hardware accelerators to perform expensive calculations. 
+			Great for graphics processing and data pattern matching.
+
+
+EC2 Pricing Options:- 
+1) On Demand Pricing:- Pay for compute capacity by the hour. Only billed when instance is running. 
+		       Still charged for storage attached to instance. 
+		       No upfront Payment or long term commitment.
+		       Great for short term, irregular or unpredictable workload.
+		       Customer EC2 instances runs on shared costs.
+
+2) Spot Pricing:- Amazon offers spare compute capacity at Discounted price. 
+		  Spot instances are recommended for- App that have fleaxible start and end time.
+		  Applications that need low compute prices. 
+		  Not suitable for workloads that cannot tolerate interruptions. 
+
+3) Reseve Pricing:- Its a billing dicount that allows you to save on you EC2 costs.
+		    Offers Discounted rates when reserved for a certain period. 1-3yr contract.
+		    When purchesing a reserved instance, you are not actually buying an instance. 
+		    You are commeting to using an on demend instances for a long period of time.
+
+
+
+
+
+

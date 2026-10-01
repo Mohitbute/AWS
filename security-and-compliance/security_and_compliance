@@ -1,0 +1,36 @@
+What is compliance ? 
+
+Organisation operating in specific industry must be adhare to the rules and laws specific to that industry.
+eg. Finance, Health, Federal gov, 
+Compliance and regulatory framework are sets of guidelins and best practices that organisation must follows to meet regulatory requireents.
+eg. HIPAA/HITCH (medical), PCI-DSS (banking)
+
+AWS Compliance:- Aws has to meet certain requirements becauce their customers are going to work in diff industry like banking finance healthcare. Whatever regulatory requirements customers have to met well as has to meet those as well.
+It like team effort. just like security both you have to be complient as well as aws.
+
+AWS Artifacts:- 
+Aws undergoes certification reviews and audit to meet regulatory requirements.
+Audit reports are available on aws artifact.
+Customers can review and accept agreemants in the artifacts.
+
+Aws compliance center:- 
+It is a central location to research cloud-related regulatory requirrements and their impact on you industry.
+Compliance Center Features:-
+Identity regulatory requirements.
+Browse country-specific laws/rwquirements.
+Discover how companies in various industries solved compliance, governance challanges.
+Aws answers to key compliance questions 
+Auditing and security checklist.
+Referance architecture with best compliances.
+
+AWS Audit Manager:-
+It continuously collects data to prepare for audit and ensures that you comply with regulatory standards. 
+It helps to build audit-ready reports.
+Login to audit manager and renerate the report. 
+
+AWS Config:- 
+Tracks how the resource is configured and records previous configurations state so you can see how the configs for it have changed over time.
+It has the historical data which keep track of all the configuration changes of resources. 
+
+
+

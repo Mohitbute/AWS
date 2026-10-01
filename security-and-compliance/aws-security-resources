@@ -1,0 +1,61 @@
+Security Resource Prevention:- These are the services that help us to prevent verious types of attack or vulnerabilities.
+
+Aws web application firewall (WAF):- This service used to protect HTTP-based attacks on you web app. 
+
+WEB ACL:- It consists of three diff things. Resource to monitor > Rules-inspection criteria > Action.
+
+AWS Shield:- It is used to detect and mitigate any sophisticated DDoS attacks. 
+
+AWS Network Firewall:- It is used to protect VPCs. It determine what traffic is allowed to enter and leave a VPCs. It is a stateful firewall so it is more intelliget.
+
+Virtual Private Cloud (VPC):- It is used to isolate your resources from other resources. 
+-----------------
+Security Resource Prevention:- It all about detecting issues, finding bugs, vulnerabilities, and things of that nature within your aws environment. 
+
+Aws Inspector:- It will actually scan the workloads running on aws for vulnerabilities and undesired network exposures. 
+		When vulnerabilities are found, inspector produces a report with the findings.
+		Re-runs scans whenever changes that could introduce new vulnerabilities are made.
+
+Aws GuardDuty:- It is the service that identifies threats by continuously monitoring the activity on your aws infra.
+		It detect usual pattern and behaviour of you aws account. if it detect anything abnormal, it will notify you. 
+		
+Amazon detective:- It actually grab logs and findings from couple of different services. Like guardDuty, CloudTrail, VPC flow logs. it takes all of those. with use of machine learning to actually create advanced visualisation and interactive dashbord.
+To easier to troubleshoot and root cause any issue. 
+ 
+Aws Config:- Aws config tracks and audits the configuration of aws resources over time.
+	     Anything change in the resources it track all in aws configs. 
+
+Aws Security Hub:- It takes finding from Amazon Inspector and Aws GuradDuty and few other locations. it going to centralised all of the security alerts so that you can see it all in a single pane of glass. It has automate security check as well. 
+
+Cloud Trail:- It tracks user activity within aws account. So anytime user perform any action whithin aws, an event is going to logged in cloud trail. It logs all the unauthorised activity done by the user. 
+
+Security Lake:- It collects security logs and events from multiple different sources. It aggregrate all of those logs in one central location. It convert that logs into a storage and query efficient parquet format as well as transfer data to the open cybersecutiry schema framework open source schema. veriety of diff subscriber consume that data from security lake so they can then process. 
+
+Aws Macie:- It autometically discover sensative data. It will generate an inventry report of your s3 bucket can scan for objects that may contain sensative data. it will notify you so that you can take necessary action.
+--------------------------------------
+Security Resource management:- All of these required configuration and specific rule and policies that we have to define.
+
+Firewall Manager:- It is a security management service that allow you to centrally configure and managed firewall rules of all of your accounts, applications and aws organisations. It is a central place to manage all of your rules. 
+
+Resource Access Manager:- It help you securaly share resuorces across accounts, organisation and organisational unit. SO you could create a resource once like privet subnet in aws account one then have it shared among all the other acoounts. So account one and account two can actually deploy EC2 instances into that subnet thats define in account one. It just make it really easy to share resources amongest multiple accounts. 
+
+Aws Cognito:- It helps implement customer indentity and access management for mobile and web application. It help you implement login and sign-up functionality to any application very easily and you get social authentication as well. It manage all of the user credentials. You dont have to manage and store all the information. 
+
+Aws Identity Center:- It allows you to manage sign-in security for all of your users in a central place and you can grant these users access to multiple aws accounts and resources across multiple aws accounts. You get a single place where you get to manage all of the users and then give them access to all of you diff accounts. 
+
+Secrets Manager:- Credential can be stored and managed in Aws Secrets Manager. The application can dynamically pull the secrets from the secret manager. So we have to hard quote it into your application code. If has autometic rotaion feature for your secrets. 
+
+Aws Certificate Manager:- It handles the complexity of creating, storing, and renewing pubilc and private certificates that can be used to protect aws websites and services. You can send encrypted data to Elastic Load balancer, CloudFront, Api Gateway and varity of different services. So you dont have to managed those certificates yourself. 
+
+Aws Private Certificate Authority:- It manages and aws private certificate authority for you so that you can generate privet certificate within you organisation. Whether its for on-prem or in cloud resources you can generate privet cert for them so you can send encrypted traffic.  This service does not generate publicaly trusted certificate. It is for the internal resources. 
+
+Key Management service (KMS):- It allows you create and manage all of you cryptographic keys. For sensatice data you never want to store it in plain text. Instead you want to encrypt it. And so you'll make use of a cryptographic key that will encrypt the data. So the data is encrypted, nobady else will be able to read it. if you want to decrypt the data make use same key to decrypt the data to get original plain text object. so for the keys handaling and decryption process, you can managed them yourself, or you can make use of a serice like Aws KMS. you can also enable autometic key encryption. It is a tool for managing the cryptographic keys. 
+
+Cloud Hardward Security module (HSM):- It is the place where you store all of your cryptographic keys. Anytime you need to perform a cryptographic operation like encryption or decryption. sent a request to hsm and thats going to perform the decryption process. Sice all of the keys are stored in once single device, it little bit more secure and easier to manage because you know whare they are your keys are scattered in multiple servers. 
+
+
+
+
+
+
+

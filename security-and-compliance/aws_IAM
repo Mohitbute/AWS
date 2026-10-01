@@ -1,0 +1,30 @@
+Identity and Access Management (IAM) :-
+
+To create an account we need 3 things:- Uniq mail Id, Credit card 
+
+Once the account is created it also create a root user.  Root user has access to everything in the account. 
+It can perform any action on any resources within the account. 
+
+IAM is the service that is responsible for identity and access management allow users to connect and be able to perform a verity of diff operation within aws. 
+
+It manages who has access to what in your aws account. They handle the authetication and authorisation process.
+Types of Identities:- User, Groups, Roles.
+
+IAM Policies:- It defines what resources a user or a group or a role can have access to end what actions they can perform on them. 
+
+user:-  When a new user is created by default user dont have access to any of the resources within aws.
+	Iam policies is just a document that either grants or denies acccess to a specific service or resource.
+	Always follows the principle of least previllages.
+
+Groups:- Groups are nothing more than just a collection if IAM users that ideally are going to have similar IAM Policies. 
+	 You can assign policies to the group. whan you take a user and assign them to the group they inherit the policies.
+	 It is little bit more efficient than assigning an individual policy for every single user.
+
+Role:- Role allow user to assume or borrow permissions of that role for short period of time. 
+       Used when you need to grant access to a service on a temporary besis. 
+
+
+Multi Factor Authentication:-  It is for te extra security for your account. You can make use of it and you can have a code sent to you MFA device or app. you have to provide that code to aws to login.
+ You have to enable it per user besis manually.
+ 
+

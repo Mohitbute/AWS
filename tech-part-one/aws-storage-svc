@@ -1,0 +1,30 @@
+Types of Storage:- 
+
+Block storage:- Amazon Elastic Block Storage(EBS)- Block storage can break up data into blocks and then store those block as seperate piece, each with uniq identifier. A collection of block can be presented to the OS as volume. The OS create a filesystem on top of it. A collection of block can be presented as a hard drive. 
+Only Block Storage is bootable so you can install os on it.
+It is preseted as filesystem so you can create traditional file system with diff dir and subdir. 
+EBS and EC2 are in same availibility zone. 
+
+
+Elastic File Storage(EFS):- Stores data in hierarchical structure of files and folders. Filsystem is accessible remotely. Creates subdirectories, store and access files within. looks like any other filesystem like local machine.  File storage can be mounted. But it is not bootable so cannot install OS on it. 
+
+
+S3 Object Storage:- It stores Objects. Object can nothing more than files. Can store any type of file. Object storage does not have folder structure. Flat file structure Everything is in same folder. Since there is no folder structure object storage cannot be mounted or booted. You can use it to store and retrive files. 
+It is good for logs, storing media files, traces. 
+
+---------------------------------
+Storage Classes:- It provides varying lavels of data access, resiliency, and cost. 
+
+S3 Standard (Default):- It is default storage class and most expensive SC. It handle two simultenious Availibility Zone failure. Aws replicates replicates your data in multiple availibility zones. 
+Aws charged you no of GB you store in S3 per month. Also have a egress fees so the amount of data that you sent out you are going to charged per GB outbound. 
+
+S3 Standard-IA:- If you dont need your data frequently you can use S3 standard-IA storage. which stands for infrequent Access. Cheaper SC. It has also same resiliency can handle Two availability Zones failures. Same charges like S3 default. Price differance is you have a retieval fee. minimum duration of charge is 90 days every file they get stored.
+
+S3 One Zone-IA:- It is as same as S3 Stadard but here data is stored in one of the availability zones not across all of them. we get low resiliency. Its a cheaper then S3 std. You are going to pay egress and has retrival polity like s3 std-IA. Main differance is only one Availablity Zone.  
+
+S3 Glasier-instant:- It is Low cost option for rarely accessed data. It has same exact performance as S3 standard. Has egrees fees and retrival fees minimun duration charges 90 days.
+
+S3 Glacier Flexible:- This is the first storage class that data isnt immediately available. Its kind of consider like a cold start.You have to wait for some time to retrive data.How logs you have to wait depend on which option to choose. Bulk=5-12hr, Expedited=1-5min, standard=3-5hr.   Charged per gigabyte for egress, have retrival fees, min duration charge of 90 days. size charge of 40kbps.  
+
+S3 Intelligent-Tiering:- Autometically reduce storeage Costs by intelligently moving data to the most cost-effective access tier. From charges prospective, you will get charged for whatever storage class the files get put in. 
+

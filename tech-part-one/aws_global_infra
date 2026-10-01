@@ -1,0 +1,21 @@
+Global Infrastructure:- 
+
+Regians:- Each region is isolated from other region. If one region goes down it does not impact others across the globe.
+	  All regions are not the same. Not all services are available in all regions. 
+	  Cost of service varies from region to region. 
+	  Before selecting the region check all the required services are available in that resion or not.
+	  An aws region is a geographic location where resources can be deployed. 
+	  You have to decide where your resources want to deployed. You have to specify the region. 
+
+Availability Zone:- Within the region there are multiple availability Zones. It is one or more discrete data centers with redundant power, networking and connectivity is aws region. It provide redundancy within the region. Deploy your application in multiple availability zones. If one AZ goes doen your application still working in other with other AZ. 
+
+Global Content Delivary & Edge Locations:- Longer region distance = Higher latency
+					Aws has created smaller edge location nearer to your location. If your region is far away from your location then these edge location acts as CDN. It acts as mini regions. you can access application via Edge location.
+
+Local Zones:- Local Zones are the extension of an Aws region. It allows you to use select aws services,like comoute, and storage closure to end users. It provides high bandwidth, secure connection to parent aws region.  Great for low latency application like real time gaming , live streaming, and virtual workstations for local city. 
+
+Differance between Edge Location and Local Zones:- 
+Both get services closure to end user to improve experience and minimize latency. 
+LZ are extension of parent region physically in major cities and geographically closed to parent region. 
+LZ has own isolated infra but are connected to the parent aws region through high bandwidth network. it provide access to subnet of services like EC2 & EBS. 
+Edge Location are small geographically dispersed compute sites that primarily support services like Cloudfront(cdn), Route 53, Aws waf. It does not have parent region. They are not DataCenters. 

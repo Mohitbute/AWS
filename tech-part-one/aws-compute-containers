@@ -1,0 +1,39 @@
+AWS Service Compute Containers:- 
+Containers with ECS & EKS these are the main containserization service within aws.
+
+Container Orchestrators:- 
+	It is the brains of a containerized environments.
+	Responsibilities:- Deploying containers across all available servers.
+			   Load Balancing requests to containers.
+			   Provide container to container connectivity.
+			   Restarting failed containers.
+			   Moving containers when hosts failed.
+	eg:- Kubernetes, Apache Mesos, ECS etc.
+
+Elastic Container Service(ECS):- 
+	Fully managed container orchestration service that helps manage, and scale containarized application.
+	It is managed by the AWS. ECS is just a brain. 
+	The containers are going to run on EC2 or Fargate another type of serverless offering.
+
+Elastic Kubernetes Service(EKS):- 
+	EKS is managed k8s service. It manages control plane. 
+	Users are responsible for managing control plane.
+	If you use Fargate, then aws also manages worker node.
+	Managing the conrolplane / Master node is difficult. Running, Scalling and Securing is difficult. 
+
+  Benefits:- Runs & Scale Control-plane across multiple Availability Zones.
+  	     Scale control plane instances based on load. 
+	     Can integrate with other Aws services like IAM, Elastic Load Balancer, ECR for container images.
+
+ECS vs EKS:-
+
+ECS is proprietary to aws so migrating to another cloud provider could be difficult.
+EKS is K8s open source and can be run on any platform. 
+More aws services you configured you cluster to interact with the harder it will be to move to another provider.
+ECS has a simpler architecture. Simpler API. Easier to ramp up new team members. 
+K8s is very complex and has a steep learning curve. With EKS you have to learn k8s and EKS specific features.
+K8a has larger community. More online support, More tooling like Helm,ArgoCD,Kustomize.
+ECS pricing- no cost for control plane. Pay for infra and running application(EC2/Fargate,EBS)
+EKS Pricing- More Expensive, You have to pay for control plane and worker-nodes/Fargate.
+
+	
